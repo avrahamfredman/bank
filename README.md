@@ -1,22 +1,56 @@
+# NgBank
+
+# SPEC
+
+## Entities
+
 ### User
 
 User Properties:
 * id
-* First name
-* Last name
-* User name
+* FirstName
+* LastName
+* AccountsList
+* UserName
 * Password
 
-### account
-## data source
+### Account
 
-We will save the data as local files in out repo's undo `assets`.
-We will create a modulethat will enable to save easily.
+Account Properties:
+* id
+* Name
+* Balance
 
-### sumery page
+### AccountAction
 
-list 30 last accountAction in account 
+AccountAction Properties:
+* id
+* AccountId
+* Type `Input/Output/Loan`
+* Amount 
 
-### accountAction page
 
-Make accountAction from inum
+## DataSource
+
+We will save the data as local files in out repo's unde `assets`.  
+We will create a module that will enable to save easily.  
+At git push data will be saved to the could (github).  
+
+## App Flow
+
+### Login Page
+
+User inputs user and pass, otherwise can't get into private area.  
+
+### Register Page
+
+New User Form
+
+### Summary Page
+
+List 30 last AccountAction in Account.  
+
+### AccountAction Page
+
+Make AccountAction from enum.  
+Dont forget to log.  
